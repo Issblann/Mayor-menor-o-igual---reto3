@@ -4,9 +4,9 @@ const parrafo = document.querySelector("#parrafo");
 const boton = document.getElementById("boton");
 
 // let text = "";
-const resultado = (text) => {
-  const valor1 = numero1.value;
-  const valor2 = numero2.value;
+// const valor1 = numero1.value;
+// const valor2 = numero2.value;
+const resultado = (valor1, valor2) => {
   if (isNaN(valor1) || isNaN(valor2)) {
     text = "Es necesario introducir dos numeros validos";
   } else if (valor1 > valor2) {
@@ -20,4 +20,4 @@ const resultado = (text) => {
   parrafo.innerHTML = text;
 };
 
-boton.addEventListener("click", resultado);
+boton.addEventListener("click", () => resultado(numero1.value, numero2.value));

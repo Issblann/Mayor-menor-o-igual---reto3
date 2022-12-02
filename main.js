@@ -31,7 +31,11 @@ const resultado = () => {
 
   parrafo.innerHTML = text;
 };
-const inputVacio = () => ((numero1.value = ""), (numero2.value = ""));
+const inputVacio = () => (
+  (numero1.value = ""),
+  (numero2.value = ""),
+  (parrafo.innerHTML = "Ingresa algun valor")
+);
 
 const numeroNegativo = (numero) => numero < 0;
 const estaVacio = (valor) => valor === "";
@@ -39,7 +43,6 @@ const estaVacio = (valor) => valor === "";
 botonCalcular.addEventListener("click", resultado);
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log("submit");
 });
 
 botonReiniciar.addEventListener("click", inputVacio);

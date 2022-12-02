@@ -11,12 +11,16 @@
     <form class="container" id="form">
       <h1 class="title">Mayor, menor o iguales?</h1>
       <p class="subtitle">Por favor introduce 2 numeros</p>
-
-      <input type="text" class="input" id="numero-1" />
-      <input type="text" class="input" id="numero-2" />
+      <small>(Unicamente numeros positivos y enteros)</small>
+      <div class="form__field">
+        <input type="text" class="input" id="numero-1" autocomplete="off" />
+      </div>
+      <div class="form__field">
+        <input type="text" class="input" id="numero-2" autocomplete="off" />
+      </div>
       <div>
-        <button type="button" class="boton" id="boton">Calcular</button>
-        <button type="submit" class="boton" id="boton2">Reiniciar</button>
+        <button type="submit" class="boton" id="boton">Calcular</button>
+        <button type="button" class="boton" id="boton2">Reiniciar</button>
       </div>
       <p class="parrafo" id="parrafo">Yo te mostraré el resultado</p>
     </form>
